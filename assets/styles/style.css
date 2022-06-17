@@ -209,6 +209,7 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  cursor: pointer;
 }
 
 .main .contenido .middle .right .redes a {
@@ -220,6 +221,8 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .main .contenido .middle .right .redes a .red {
@@ -313,6 +316,9 @@ nav {
   .contenedor {
     width: 540px;
   }
+  .main {
+    overflow: auto;
+  }
   .main .contenido .top .texto {
     text-align: center;
   }
@@ -322,6 +328,15 @@ nav {
   .main .contenido .middle .right {
     width: 100%;
     margin-top: 30px;
+  }
+  .main .contenido .middle .right .contador {
+    margin-bottom: 20px;
+  }
+  .main .contenido .middle .right .contador .cuenta {
+    margin-bottom: 20px;
+  }
+  .main .contenido .middle .right .redes {
+    margin-bottom: 30px;
   }
 }
 

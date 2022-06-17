@@ -148,10 +148,13 @@ nav{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: end;
+                    cursor: pointer;
                     a{
                         display: flex;
                         flex-direction: column;
                         margin: 0 10px;
+                        text-decoration: none;
+                        color: white;
                         .red{
                             font-size: 45px;
                         }
@@ -243,6 +246,7 @@ nav{
 	}
 
     .main{
+        overflow: auto;
         .contenido{
             .top{
                 .texto{
@@ -256,6 +260,15 @@ nav{
                 .right{
                     width: 100%;
                     margin-top: 30px;
+                    .contador{
+                        margin-bottom: 20px;
+                        .cuenta{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .redes{
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }
