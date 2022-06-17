@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  background-color: #072049;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  height: 10vh;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.active {
+  left: 0 !important;
+}
+
+/* Main */
+.main {
+  background-image: url("../img/back.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main .contenido {
+  width: 100%;
+  height: 100%;
+}
+
+.main .contenido .top {
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contenido .top .texto {
+  margin: auto 0;
+}
+
+.main .contenido .top .texto .uno, .main .contenido .top .texto .dos {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+.main .contenido .top .texto .uno {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.main .contenido .top .texto .dos {
+  font-size: 45px;
+}
+
+.main .contenido .middle {
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .contenido .middle .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 44%;
+  text-align: center;
+}
+
+.main .contenido .middle .left .texto {
+  width: 100%;
+  display: block;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main .contenido .middle .left .texto .amarillo {
+  color: yellow;
+}
+
+.main .contenido .middle .left .botones {
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .contenido .middle .left .botones button {
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main .contenido .middle .left .botones button:hover {
+  background-color: #072049;
+  color: white;
+}
+
+.main .contenido .middle .left .botones .btn-azul {
+  background-color: #164bd2;
+  color: white;
+}
+
+.main .contenido .middle .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 48%;
+  text-align: center;
+}
+
+.main .contenido .middle .right .contador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.main .contenido .middle .right .contador .cuenta {
+  width: 23%;
+  margin-bottom: 60px;
+}
+
+.main .contenido .middle .right .contador .cuenta .numero {
+  background-color: white;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main .contenido .middle .right .contador .cuenta .texto {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.main .contenido .middle .right .redes {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main .contenido .middle .right .redes a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+}
+
+.main .contenido .middle .right .redes a .red {
+  font-size: 45px;
+}
+
+.modal {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  z-index: 999;
+  left: 10000px;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: linear .2s;
+  transition: linear .2s;
+}
+
+.modal .contenedor-modal {
+  margin: 80px auto;
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.modal .contenedor-modal .close {
+  width: 100%;
+  text-align: end;
+  padding: 5px 0;
+}
+
+.modal .contenedor-modal .close span {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal .contenedor-modal .texto {
+  text-align: center;
+  padding: 30px 35px;
+  background-color: #072049;
+  color: white;
+  font-size: 18px;
+}
+
+.modal .contenedor-modal .formulario {
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.modal .contenedor-modal .formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal .contenedor-modal .formulario form input {
+  width: 100%;
+  border: 1px solid #072049;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.modal .contenedor-modal .formulario form button {
+  padding: 10px 25px;
+  background-color: #164bd2;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.modal .contenedor-modal .formulario form button:hover {
+  background-color: #164bd2;
+}
+
+@media (max-width: 992px) {
+  .contenedor {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 540px;
+  }
+  .main .contenido .top .texto {
+    text-align: center;
+  }
+  .main .contenido .middle .left {
+    width: 100%;
+  }
+  .main .contenido .middle .right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedor {
+    width: 90%;
+  }
+  .main .contenido .top .texto .uno {
+    font-size: 16px;
+  }
+  .main .contenido .top .texto .dos {
+    font-size: 32px;
+  }
+  .main .contenido .middle .left .botones button {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .main .contenido .middle .right .contador .cuenta .numero {
+    padding: 20px;
+    font-size: 16px;
+  }
+  .main .contenido .middle .right .contador .cuenta .texto {
+    font-size: 14px;
+  }
+  .modal .contenedor-modal {
+    width: 95%;
+    height: 450px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
