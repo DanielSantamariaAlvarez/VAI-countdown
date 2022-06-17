@@ -341,6 +341,9 @@ nav {
   .main .contenido .middle .right .redes {
     margin-bottom: 30px;
   }
+  .main .contenido .middle .right .redes a .red {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 576px) {
