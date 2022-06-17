@@ -317,7 +317,7 @@ nav {
     width: 540px;
   }
   .main {
-    overflow: auto;
+    height: 105vh;
   }
   .main .contenido .top .texto {
     text-align: center;
